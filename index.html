@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillCraft Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>❌⭕ Tic Tac Toe</h1>
+
+    <div class="mode">
+        <button onclick="setMode('pvp')">Player vs Player</button>
+        <button onclick="setMode('cpu')">Player vs Computer</button>
+    </div>
+
+    <div class="status" id="status">Choose Game Mode</div>
+
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <button class="reset" onclick="resetGame()">Restart Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
